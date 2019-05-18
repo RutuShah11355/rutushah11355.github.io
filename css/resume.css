@@ -269,20 +269,42 @@ a:hover, a:focus, a:active {
 }
 
 
-.carousel,
-      .carousel-item,
-      .carousel-item.active {
-        height: auto;
-      }
-.carousel-inner {
-        height: auto;
-      }
-.carousel .carousel-item video {
-        min-width: auto;
-        min-height: auto;
-        width: auto;
-        height: auto;
-        top: auto;
-        left: auto;
-        transform: translate(-50%, -50%);
-      }
+
+#homepage_slider iframe { 
+    min-height: 100%;
+    min-width: 100%; 
+	  height: auto;
+    width: auto;
+	overflow: hidden;
+}
+
+.carousel-inner>.item>img {
+  display: block;
+  line-height: 1;
+}
+
+#slider-play-button button { 
+	display: inline-block;
+	border: 0.06666em solid #fff;
+	font-size: 2rem;
+	background: rgba(255,255,255,0.23);
+	color: #fff;
+	cursor: pointer;
+	transition: .3s background;
+	line-height: 1.3em;
+	height: 1.5em;
+	width: 2.5em;
+	border-radius: 0.3em;
+	position: absolute;
+	opacity: .7;
+	right: 1em;
+	top: 20%;
+}
+.play-video-button:before {
+	font-family: FontAwesome;
+	content: "\f04b";
+}
+.pause-video-button:before {
+	font-family: FontAwesome;
+	content: "\f04c";
+}
