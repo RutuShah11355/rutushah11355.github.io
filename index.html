@@ -23,33 +23,6 @@
   <link href="css/resume.min.css" rel="stylesheet">
   <link href="css/resume.css" rel="stylesheet">
   
-  <script type="text/javascript"> 
-    
-    // without this script, the slider doesn't start on it's own:
-  !function ($) {
-    $(function(){
-      $('#homepage_slider').carousel()
-    })
-  }(window.jQuery)
-
-
-// if user chooses to not autoplay the video, the button should be uncommented in html and this script will make the button work:
-var vid = document.getElementById("bgvid");
-var playButton = document.querySelector("#slider-play-button button");
-
-playButton.addEventListener("click", function() {
-  if (vid.paused) {
-    vid.play();
-	playButton.classList.remove("play-video-button");
-    playButton.classList.add("pause-video-button");
-  } else {
-    vid.pause();
-	playButton.classList.add("play-video-button");
-    playButton.classList.remove("pause-video-button");
-  }
-});
-  </script>
-  
 </head>
 
 <body id="page-top">
@@ -321,51 +294,13 @@ playButton.addEventListener("click", function() {
         <h3 class="mb-0">Games</h3>
         <div class="subheading mb-3">That I've created</div>
         
-         
-           
-        
-        
-        
-        <div id="banner">
-
-         
-          <!-- Slider begins here -->
-          <div id="homepage_slider" class="carousel slide">
-            <ol class="carousel-indicators">
-              <li data-target="#homepage_slider" data-slide-to="0" class="active"></li>
-              <li data-target="#homepage_slider" data-slide-to="1"></li>
-            </ol>
-
-            <!-- Carousel items -->
-          <div class="carousel-inner">
-              <!-- slide #1 -->
-              <div data-slide="0" class="item active">
-                <div class="slider-hide-on-mobile">
-                   <iframe width="560" height="315" src="https://www.youtube.com/embed/U7thNA9ZZ1E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-
-              <!-- slide #2 (image) -->
-              <div data-slide="1" class="item">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/jGHAuwdBZlw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-              
-            </div> <!-- end of '.carousel-inner' -->
-
-            <!-- Carousel nav -->
-          <!-- 	<div id="slider-play-button"><button class="play-video-button" type="button" title="Play Video"></button></div> -->
-            <a class="carousel-control left" href="#homepage_slider" data-slide="prev">&lsaquo;</a>
-            <a class="carousel-control right" href="#homepage_slider" data-slide="next">&rsaquo;</a>
-            </div> <!-- end of '#homepage_slider' -->
-            <!-- Slider ends here -->
-
-    </div>  <!-- end of "#banner" -->
-  
-        
-        
-        
-        
-        
+	<div float="left">      
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/U7thNA9ZZ1E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	      
+	<div float="left">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/jGHAuwdBZlw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+	</div>
         
         
         
