@@ -273,8 +273,8 @@ a:hover, a:focus, a:active {
 #homepage_slider iframe { 
     min-height: 100%;
     min-width: 100%; 
-	  height: auto;
-    width: auto;
+	height: 315;
+    width: 560;
 	overflow: hidden;
 }
 
